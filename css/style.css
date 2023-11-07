@@ -67,7 +67,19 @@ main{
 .border-dsh{
     border: 2px dashed #fff;
 }
-@media screen and (min-width: 578px) {
-    
+@media screen and (min-width: 553px) {
+    #sidebar{
+        width: 200px;
+    } 
+}
+@media screen and (min-width: 640px) {
+    .album{
+        width: 25%;
+    }            
+}
+@media screen and (min-width: 879px) {
+    .album{
+        width: calc(100% / 6)
+    }
     
 }

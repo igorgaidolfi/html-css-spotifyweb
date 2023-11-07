@@ -3,3 +3,71 @@
     border: 0;
     box-sizing: border-box;
 }
+.d-flex{
+    display: flex;
+}
+#top{
+    height: calc(100vh - 100px);
+}
+#bottom{
+    background-color: #282828;
+    height: 100px;
+}
+.upper-content{
+    display: flex;
+    height: 100%;
+}
+#sidebar{
+    background-color: black;
+    width: 50px;
+}
+#content{
+    background-color: #141922;
+    width: calc(100vw - 50px);
+    overflow-y: auto;
+}
+header{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6 );
+    width: 100%;
+    height: 100px;
+}
+main{
+    padding-top: 100px;
+}
+.menu-content{
+    background-color: #adff2f;
+    height: 150px;
+}
+.container{
+    width: 100%;
+    
+}
+.row{
+    display: flex;
+    width: 100%;
+}
+.col{
+    width: 100%;
+}
+.recently-played{
+    flex-wrap: wrap;
+}
+.album{
+    width: 50%;
+    height: 300px;
+    background-color: aqua;   
+}
+.bg-green{
+    background-color: #50c878;
+}
+.bg-red{
+    background-color: red;
+}
+.border-dsh{
+    border: 2px dashed #fff;
+}
+@media screen and (min-width: 578px) {
+    
+    
+}

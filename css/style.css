@@ -3,6 +3,9 @@
     border: 0;
     box-sizing: border-box;
 }
+body{
+    color: white;
+}
 .d-flex{
     display: flex;
 }
@@ -20,6 +23,9 @@
 #sidebar{
     background-color: black;
     width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #content{
     background-color: #141922;
@@ -29,15 +35,24 @@
 header{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.6 );
-    width: 100%;
+    width: calc(100% - 50px);
     height: 100px;
+    text-align: right;
+    padding: 30px 10px;
+    
+}
+button{
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff
 }
 main{
     padding-top: 100px;
 }
 .menu-content{
-    background-color: #adff2f;
-    height: 150px;
+    background-color: black;
 }
 .container{
     width: 100%;
@@ -55,8 +70,7 @@ main{
 }
 .album{
     width: 50%;
-    height: 300px;
-    background-color: aqua;   
+    text-align: center; 
 }
 .bg-green{
     background-color: #50c878;
@@ -66,6 +80,48 @@ main{
 }
 .border-dsh{
     border: 2px dashed #fff;
+}
+.playlist{
+    display: none;
+}
+#sidebar span{
+    display: none;
+}
+.logo{
+    display: none;
+}
+.logo-s{
+    margin: 5px 0;
+}
+#sidebar img{
+    width: 100%;
+    padding: 3px 12px;
+}
+ul{
+    list-style: none;
+}
+.font-grey{
+    color: #707278
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
+.menu-content li{
+    padding: 5px;
+    font-weight: 900;
+}
+.menu-content ul{
+    justify-content: center;
+}
+#content img,
+#bottom img{
+    width: 100%;
+}
+#bottom .col{
+    width: 30%;
+}
+.track-on{
+    height: 50px
 }
 @media screen and (min-width: 553px) {
     #sidebar{

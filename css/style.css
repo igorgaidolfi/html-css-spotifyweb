@@ -191,6 +191,9 @@ ul{
 .d-block{
     display: block;
 }
+.d-none{
+    display: none;
+}
 .center{
     width: 30%;
 }

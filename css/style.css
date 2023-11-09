@@ -11,11 +11,11 @@ body{
     display: flex;
 }
 #top{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 75px);
 }
 #bottom{
     background-color: #282828;
-    height: 100px;
+    height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,7 +186,7 @@ ul{
     padding-left: 10px;
 }
 .track-on-song{
-    margin-left: 5px;
+    margin-left: 10px;
 }
 .d-block{
     display: block;
@@ -195,16 +195,66 @@ ul{
     display: none;
 }
 .center{
-    width: 30%;
+    width: 40%;
 }
 .player-controls ul{
-    justify-content: space-between;
+    justify-content: center;
+}
+.player-controls li{
+    padding: 0 10px;
+    font-size: 18px;
+}
+.fa-circle-play{
+    font-size: 28px;
+    margin-bottom: 5px;
 }
 .track-on-icons{
     flex-direction: column;
 }
 .left{
     justify-content: space-between;
+}
+.track-on-song span{
+    font-size: small;
+}
+.player{
+    justify-content: space-between;
+    font-size: x-small;
+}
+.player-bar{
+    height: 4px;
+    width: 75%;
+    background-color: #5a5a5a;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bar-progress{
+    background-color: #c1c1c1;
+    height: 4px;
+    width: 20%;
+    border-radius: 5px;
+    position: relative;
+}
+.player-bar:hover .bar-progress{
+    background-color: #adff2f;
+}
+.b-progress-circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+.player-bar:hover .b-progress-circle{
+    display: block;
+}
+.player-share li{
+    padding: 0 5px;
+    font-size: small;
 }
 @media screen and (min-width: 553px) {
     #sidebar{
@@ -231,11 +281,22 @@ ul{
 @media screen and (min-width: 640px) {
     .album{
         width: calc(25% - 10px);
-    }            
+    }
+    .left, .right{
+        width: 200px;
+    }
+    .d-block{
+        display: inline;
+    }
+    .track-on-icons{
+        flex-direction: row;
+    }
+    .fa-heart{
+        margin-right: 15px;
+    }          
 }
 @media screen and (min-width: 879px) {
     .album{
         width: calc(100% / 6 - 10px)
     }
-    
 }

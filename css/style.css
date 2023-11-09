@@ -19,6 +19,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 .upper-content{
     display: flex;
@@ -77,9 +79,8 @@ main{
     margin-right: 30px;
 }
 .album{
-    /* margin: 5px;
-    width: calc(50% - 10px); */
-    width: 50%;
+    margin: 5px;
+    width: calc(50% - 10px);
     text-align: center; 
 }
 .menu-content li{
@@ -92,6 +93,9 @@ main{
 }
 .recently-title{
     margin: 30px 20px;
+}
+.align-center{
+    align-items: center;
 }
 .album h3{
     margin: 10px 0;
@@ -111,33 +115,55 @@ main{
 #content img{
     width: 100%;
 }
-.bg-green{
-    background-color: #50c878;
+.margin-l-5{
+    margin-left: 5px;
 }
-.bg-red{
-    background-color: red;
+.grey-box{
+    height: 33px;
+    width: 33px;
+    color: #000;
+    background-color: #d3d3d3;
+    font-size: xx-large;
+    font-weight: 900;
+    justify-content: center;
+    align-items: flex-end;
 }
-.border-dsh{
-    border: 2px dashed #fff;
+.playlist li{
+    margin: 15px 0;
 }
-.playlist{
+.playlist ul{
+    height: 30vh;
+    overflow-y: auto;
+}
+.playlist,
+.logo{
     display: none;
+}
+.playlist h5{
+    margin: 15px 0 
 }
 #sidebar span{
     display: none;
     vertical-align: middle;
 }
-.logo-s{
+#logo-small{
     margin: 5px 0;
+}
+#sidebar .logo{
+    height: 45px;
+    margin: 25px 0;
 }
 #sidebar img{
     height: 30px;
     padding-left: 10px;
-    margin: 7px 0;
-    vertical-align: middle;
+    margin: 5px 0;
+}
+.p-left-10{
+    padding-left: 10px;
 }
 ul{
     list-style: none;
+    padding: 0;
 }
 .font-grey{
     color: #707278
@@ -161,25 +187,37 @@ ul{
 .d-block{
     display: block;
 }
-.d-none{
-    display: none;
-}
 .center{
     width: 30%;
 }
 @media screen and (min-width: 553px) {
     #sidebar{
         width: 200px;
-    } 
+    }
+    .playlist,
+    #sidebar span,
+    .logo{
+        display: block;
+    }
+    #logo-small{
+        display: none;
+    }
+    #content{
+        width: calc(100vw - 200px);
+    }
+    header{
+        width: calc(100% - 200px);
+    }
+
 }
 @media screen and (min-width: 640px) {
     .album{
-        width: 25%;
+        width: calc(25% - 10px);
     }            
 }
 @media screen and (min-width: 879px) {
     .album{
-        width: calc(100% / 6)
+        width: calc(100% / 6 - 10px)
     }
     
 }

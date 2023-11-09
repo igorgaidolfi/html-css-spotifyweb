@@ -178,17 +178,30 @@ ul{
     flex-wrap: wrap;
 }
 .left, .right{
-    width: 30%;
+    width: 25%;
     height: 75px;
 }
 .left img{
     height: 30px;
+    padding-left: 10px;
+}
+.track-on-song{
+    margin-left: 5px;
 }
 .d-block{
     display: block;
 }
 .center{
     width: 30%;
+}
+.player-controls ul{
+    justify-content: space-between;
+}
+.track-on-icons{
+    flex-direction: column;
+}
+.left{
+    justify-content: space-between;
 }
 @media screen and (min-width: 553px) {
     #sidebar{
@@ -208,7 +221,9 @@ ul{
     header{
         width: calc(100% - 200px);
     }
-
+    .menu-content li {
+        padding: 20px 10px;
+    }
 }
 @media screen and (min-width: 640px) {
     .album{

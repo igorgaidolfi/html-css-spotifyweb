@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
@@ -14,8 +15,8 @@
             <div class="upper-content">
                 <div id="sidebar">
                     <div class="top-sb">
-                        <img src="./img/logo-small.svg" alt="logo-s" class="logo-s">
-                        <img src="./img/logo.svg" alt="logo" class="logo">
+                        <img src="./img/logo-small.svg" alt="logo-s">
+                        <img src="./img/logo.svg" alt="logo">
                         <img src="./img/home.svg" alt="home">
                         <span>Home</span>
                         <img src="./img/search.svg" alt="search">
@@ -26,7 +27,7 @@
                             <h2>PLAYLIST</h2>
                             <span>+</span>
                             <p>Crea Playlist</p>
-                            <ul>
+                            <ul> 
                                 <li>Nome Playlist</li>
                                 <li>Nome Playlist</li>
                                 <li>Nome Playlist</li>
@@ -57,13 +58,13 @@
                                         <ul class="d-flex f-wrap">
                                             <li>IN EVIDENZA</li>
                                             <li>PODCAST</li>
-                                            <li>CLASSIFICHE</li>                                           <li>CLASSIFICHE</li>
+                                            <li>CLASSIFICHE</li>
                                             <li>GENERI E MOOD</li>
                                             <li>NUOVE USCITE</li>
                                             <li>SCOPRI</li>
                                         </ul>
                                     </div>
-                                    <h2>Recently played</h2>
+                                    <h2 class="recently-title">Recently played</h2>
                                     <div class="recently-played d-flex">
                                         <div class="album border-dsh">
                                             <img src="./img/metal_lifting.jpg" alt="metal">
@@ -129,29 +130,39 @@
             </div>
         </div>
         <div id="bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col d-flex">
-                        <div class="track-on">
+            <div class="left">
+                    <div class="track-on d-flex">
+                        <div class="track-on-img">
                             <img src="./img/sinister.jpeg" alt="sinister">
+                        </div>
+                        <div class="track-on-song">
                             <h5>Sinister</h5>
-                            <span>Brano Nome</span>
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-regular fa-folder"></i>
-                        </div>
-                        <div class="player-controls">
-                            <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-backward-step"></i>
-                            <i class="fa-regular fa-circle-play"></i>
-                            <i class="fa-solid fa-forward-step"></i>
-                            <i class="fa-solid fa-rotate-right"></i>
-                        </div>
-                        <div class="player-share">
-                            <i class="fa-solid fa-list"></i>
-                            <i class="fa-solid fa-display"></i>
-                            <i class="fa-solid fa-volume-high"></i>
-                        </div>
+                            <span class="d-block">Brano</span>
+                            <span>Nome</span>
+                        </div>   
                     </div>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+            </div>
+            <div class="center">
+                <div class="player-controls">
+                    <ul class="d-flex">
+                        <li><i class="fa-solid fa-shuffle"></i></li>
+                        <li><i class="fa-solid fa-backward-step"></i></li>
+                        <li><i class="fa-regular fa-circle-play"></i></li>
+                        <li><i class="fa-solid fa-forward-step"></i></li>
+                        <li><i class="fa-solid fa-rotate-right"></i></li>
+                    </ul>
+                </div>
+                <div class="player-bar"></div>
+            </div>
+            <div class="right">
+                <div class="player-share">
+                    <ul class="d-flex">
+                        <li><i class="fa-solid fa-list"></i></li>
+                        <li><i class="fa-solid fa-display"></i></li>
+                        <li><i class="fa-solid fa-volume-high"></i></li>
+                    </ul>
                 </div>
             </div>
         </div>

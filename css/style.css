@@ -45,6 +45,7 @@ header{
     height: 100px;
     text-align: right;
     padding: 30px 10px;
+    z-index: 1;
     
 }
 button{
@@ -81,7 +82,7 @@ main{
 .album{
     margin: 5px;
     width: calc(50% - 10px);
-    text-align: center; 
+    text-align: center;
 }
 .menu-content li{
     padding: 20px 5px;
@@ -255,6 +256,47 @@ ul{
 .player-share li{
     padding: 0 5px;
     font-size: small;
+}
+/* HOVERS  */
+.cerca:hover,
+.libreria:hover,
+.crea-p:hover,
+.playlist li:hover,
+.dl:hover,
+.profile:hover,
+.fa-heart:hover,
+.fa-folder:hover,
+.menu-content li:hover{
+    color: #fff;
+}
+.plus:hover{
+background-color: #fff;
+}
+.brano:hover,
+.nome:hover,
+.track-on-song h5:hover{
+    text-decoration: underline;
+}
+.album-img{
+    position: relative;
+}
+.hover-play{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6 );
+    top: 0;
+    left: 0;
+    display: none;
+}
+.album:hover .hover-play{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.album .fa-circle-play{
+    font-size: 75px;
 }
 @media screen and (min-width: 553px) {
     #sidebar{

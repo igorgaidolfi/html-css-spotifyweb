@@ -24,17 +24,17 @@
                         </div>
                         <div class="d-flex align-center">
                             <img src="./img/search.svg" alt="search">
-                            <span class="font-grey margin-l-5">Cerca</span>
+                            <span class="font-grey margin-l-5 cerca">Cerca</span>
                         </div>
                         <div class="d-flex align-center">
                             <img src="./img/libreria.svg" alt="libreria">
-                            <span class="font-grey margin-l-5">La tua libreria</span>
+                            <span class="font-grey margin-l-5 libreria">La tua libreria</span>
                         </div>
                         <div class="playlist p-left-10">
                             <h5>PLAYLIST</h5>
                             <div class="d-flex align-center">
-                                <div class="grey-box d-flex">+</div>
-                                <p class="font-grey margin-l-5">Crea Playlist</p>
+                                <div class="grey-box d-flex plus">+</div>
+                                <p class="font-grey margin-l-5 crea-p">Crea Playlist</p>
                             </div>
                             <ul class="font-grey"> 
                                 <li>Nome Playlist</li>
@@ -50,12 +50,12 @@
                     <div class="bot-sb">
                         <div class="d-flex align-center">
                             <img src="./img/download.svg" alt="download">
-                            <span class="font-grey margin-l-5">Installa app</span>
+                            <span class="font-grey margin-l-5 dl">Installa app</span>
                         </div>
                         <hr>
                         <div class="d-flex align-center">
                             <img src="./img/profile.svg" alt="profile" class="profile">
-                            <span class="font-grey margin-l-5">John Doe</span>
+                            <span class="font-grey margin-l-5 profile">John Doe</span>
                         </div>
                     </div>   
                 </div>
@@ -80,32 +80,62 @@
                                     <h2 class="recently-title">Recently played</h2>
                                     <div class="recently-played d-flex f-wrap">
                                         <div class="album">
-                                            <img src="./img/metal_lifting.jpg" alt="metal">
+                                            <div class="album-img">
+                                                <img src="./img/metal_lifting.jpg" alt="metal">
+                                                <div class="hover-play">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div>
                                             <h3>Heavy Metal</h3>
                                             <h4 class="font-grey">Subtitle</h4>
                                         </div>
-                                        <div class="album"> 
-                                            <img src="./img/stranger.jpeg" alt="stranger">
+                                        <div class="album">
+                                            <div class="album-img">
+                                                <img src="./img/stranger.jpeg" alt="stranger">
+                                                <div class="hover-play">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div>
                                             <h3>Stranger Things, Vol. 1 (a Netilix Original Series Soundtrack)</h3>
                                             <h4 class="font-grey">Kyle Dixon & Michael Stein</h4>
                                         </div>
-                                        <div class="album"> 
-                                            <img src="./img/aquietplace.jpeg" alt="aquietplace">
+                                        <div class="album">
+                                            <div class="album-img">
+                                                <img src="./img/aquietplace.jpeg" alt="aquietplace">
+                                                <div class="hover-play">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div> 
                                             <h3>A quiet place</h3>
                                             <h4 class="font-grey">Subtitle</h4>
                                         </div>
-                                        <div class="album"> 
-                                            <img src="./img/split.jpeg" alt="split">
+                                        <div class="album">
+                                            <div class="album-img">
+                                                <img src="./img/split.jpeg" alt="split">
+                                                <div class="hover-play">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div>  
                                             <h3>Split</h3>
                                             <h4 class="font-grey">Subtitle</h4>
                                         </div>
-                                        <div class="album"> 
-                                            <img src="./img/cure.jpeg" alt="cure for wellness">
+                                        <div class="album">
+                                            <div class="album-img">
+                                                <img src="./img/cure.jpeg" alt="cure for wellness">
+                                                <div class="hover-play">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div>  
                                             <h3>A cure for wellness</h3>
                                             <h4 class="font-grey">Subtitle</h4>
                                         </div>
-                                        <div class="album"> 
-                                            <img src="./img/sinister.jpeg" alt="sinister">
+                                        <div class="album">
+                                            <div class="album-img">
+                                                <img src="./img/sinister.jpeg" alt="sinister">
+                                                <div class="hover-play">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div>  
                                             <h3>Sinister</h3>
                                             <h4 class="font-grey">Subtitle</h4>
                                         </div>
@@ -114,11 +144,21 @@
                                     <h4 class="made-for-subtitle font-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h4>
                                     <div class="made-for d-flex">
                                         <div class="album">
+                                            <div class="album-img">
                                             <img src="./img/radar.jpeg" alt="radar">
+                                                <div class="hover-play">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div>
                                             <h3>Release Radar</h3>
                                         </div>
                                         <div class="album">
-                                            <img src="./img/mixdaily.jpeg" alt="daily mix">
+                                            <div class="album-img">
+                                                <img src="./img/mixdaily.jpeg" alt="daily mix">
+                                                <div class="hover-play">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div>
                                             <h3>Daily Mix 1</h3>
                                         </div>
                                     </div>
@@ -126,11 +166,21 @@
                                     <h4 class="famous-subtitle font-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h4>
                                     <div class="famous-artist d-flex">
                                         <div class="album">
-                                            <img src="./img/youg.jpeg" alt="lana">
+                                            <div class="album-img">
+                                                <img src="./img/youg.jpeg" alt="lana">
+                                                <div class="hover-play">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div>
                                             <h3>Lana del Rey</h3>
                                         </div>
                                         <div class="album">
-                                            <img src="./img/einaudi.jpeg" alt="einaudi">
+                                            <div class="album-img">
+                                                <img src="./img/einaudi.jpeg" alt="einaudi">
+                                                <div class="hover-play">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div>
                                             <h3>Ludovico Einaudi</h3>
                                         </div>
                                     </div>   
@@ -150,11 +200,11 @@
                         </div>
                         <div class="track-on-song">
                             <h5>Sinister</h5>
-                            <span class="d-block">Brano</span>
-                            <span>Nome</span> 
+                            <span class="d-block brano">Brano</span>
+                            <span class="nome">Nome</span> 
                         </div>   
                     </div>
-                    <div class="track-on-icons d-flex">
+                    <div class="track-on-icons d-flex font-grey">
                         <i class="fa-regular fa-heart"></i>
                         <i class="fa-regular fa-folder"></i>
                     </div>
